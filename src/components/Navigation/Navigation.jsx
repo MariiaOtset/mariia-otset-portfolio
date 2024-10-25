@@ -1,24 +1,30 @@
 import css from "./Navigation.module.css";
+import { RiCloseFill } from "react-icons/ri";
 
 const Navigation = () => {
   return (
-      <ul className={css.container}>
-        <li>
-          <a href="#about">About me</a>
+    <div className={css.container}>
+      <button className={css.close} type="button">
+        <RiCloseFill className={css.icon} />
+      </button>
+      <ul className={css.wrapper}>
+        <li className={css.linkWrapper}>
+          <a href="#about" className={css.link}>About me</a>
         </li>
-        <li>
-          <a href="#skills">Skills</a>
+        <li className={css.linkWrapper}>
+          <a href="#skills" className={css.link}>Skills</a>
         </li>
-        <li>
-          <a href="#projects">Projects</a>
+        <li className={css.linkWrapper}>
+          <a href="#projects" className={css.link}>Projects</a>
         </li>
-        <li>
-          <a href="#education">Education</a>
+        <li className={css.linkWrapper}>
+          <a href="#education" className={css.link}>Education</a>
         </li>
-        <li>
-          <a href="#contacts">Contacts</a>
+        <li className={css.linkWrapper}>
+          <a href="#contacts" className={css.link}>Contacts</a>
         </li>
       </ul>
+    </div>
   );
 };
 
