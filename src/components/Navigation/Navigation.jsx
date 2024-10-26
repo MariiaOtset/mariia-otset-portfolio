@@ -56,6 +56,9 @@ const Navigation = () => {
               Contacts <GoArrowUpRight className={css.arrow} />
             </a>
           </li>
+          <li className={css.linkWrapper}>
+            <a href="" className={css.link}></a>
+          </li>
         </ul>
       </div>
     </>
