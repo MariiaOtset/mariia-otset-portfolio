@@ -44,15 +44,10 @@
   font-size: 30px;
   text-decoration: none;
   transition: color 0.2s ease;
-}
 
-.menu ul li a:hover {
-  color: #00ff80;
-}
-
-/* Open Menu State */
-.menu-open .menu {
-  transform: translateX(0);
+  &:focus {
+    color: #00ff80;
+  }
 }
 
 .hidden {
@@ -61,16 +56,34 @@
 
 @media screen and (min-width: 768px) {
   .mobileNavigation,
-  .close {
+  .close,
+  .arrow {
     display: none;
   }
 
   .container {
+    height: 100px;
+    display: flex;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: sticky;
     left: auto;
-    padding: 25px 30px;
-    justify-content: space-around;
-    gap: 25px;
+    width: 100%;
+    padding: 25px 50px;
+    gap: 0;
     z-index: 999;
+  }
+
+  .linkWrapper,
+  .linkWrapper:first-child {
+    padding: 20px;
+  }
+
+  .link {
+    font-size: 20px;
   }
 }

@@ -1,76 +1,59 @@
+import { useState } from "react";
 import css from "./Navigation.module.css";
 import { RiCloseFill } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useEffect, useRef } from "react";
+import { GoArrowUpRight } from "react-icons/go";
 // import clsx from 'clsx';
 
 // const toggleClasses = clsx();
 
 const Navigation = () => {
-  const burgerMenuRef = useRef(null);
-  const closeBtnRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const burgerMenu = burgerMenuRef.current;
-    const closeBtn = closeBtnRef.current;
-
-    const handleClick = () => {
-      if (burgerMenu) {
-        burgerMenu.classList.add(css.hidden);
-      }
-    };
-
-    if (closeBtn) {
-      closeBtn.addEventListener("click", handleClick);
-    }
-
-    return () => {
-      if (closeBtn) {
-        closeBtn.removeEventListener("click", handleClick);
-      }
-    };
-  }, []);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
       <div className={css.mobileNavigation}>
         <a href="#about">My portfolio</a>
-        <button className={css.buttons} type="button">
+        <button className={css.buttons} type="button" onClick={toggleMenu}>
           <RxHamburgerMenu className={css.icon} />
         </button>
       </div>
-      <div className={css.container} ref={burgerMenuRef}>
+      <div className={`${css.container} ${isMenuOpen ? "" : css.hidden}`}>
         <button
           className={`${css.buttons} ${css.close}`}
           type="button"
-          ref={closeBtnRef}
+          onClick={toggleMenu}
         >
           <RiCloseFill className={css.icon} />
         </button>
         <ul className={css.wrapper}>
           <li className={css.linkWrapper}>
             <a href="#about" className={css.link}>
-              About me
+              About me <GoArrowUpRight className={css.arrow} />
             </a>
           </li>
           <li className={css.linkWrapper}>
             <a href="#skills" className={css.link}>
-              Skills
+              Skills <GoArrowUpRight className={css.arrow} />
             </a>
           </li>
           <li className={css.linkWrapper}>
             <a href="#projects" className={css.link}>
-              Projects
+              Projects <GoArrowUpRight className={css.arrow} />
             </a>
           </li>
           <li className={css.linkWrapper}>
             <a href="#education" className={css.link}>
-              Education
+              Education <GoArrowUpRight className={css.arrow} />
             </a>
           </li>
           <li className={css.linkWrapper}>
             <a href="#contacts" className={css.link}>
-              Contacts
+              Contacts <GoArrowUpRight className={css.arrow} />
             </a>
           </li>
         </ul>
