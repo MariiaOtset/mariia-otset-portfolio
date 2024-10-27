@@ -42,12 +42,31 @@
 .link {
   color: #f9f7f7;
   font-size: 30px;
-  text-decoration: none;
   transition: color 0.2s ease;
 
   &:focus {
     color: #00ff80;
   }
+}
+
+.mobileNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  height: 100px;
+  width: 100vw;
+}
+
+.mobileNavigation .icon {
+  stroke: white;
+}
+
+.mobileLink {
+  color: whitesmoke;
+  margin-left: 40px;
+  padding: 10px;
+  font-size: 26px;
 }
 
 .hidden {

@@ -3,9 +3,6 @@ import css from "./Navigation.module.css";
 import { RiCloseFill } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GoArrowUpRight } from "react-icons/go";
-// import clsx from 'clsx';
-
-// const toggleClasses = clsx();
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +14,9 @@ const Navigation = () => {
   return (
     <>
       <div className={css.mobileNavigation}>
-        <a href="#about">My portfolio</a>
+        <a href="#about" className={css.mobileLink}>
+          My portfolio
+        </a>
         <button className={css.buttons} type="button" onClick={toggleMenu}>
           <RxHamburgerMenu className={css.icon} />
         </button>
