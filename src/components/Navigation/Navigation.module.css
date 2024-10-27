@@ -13,11 +13,11 @@
 }
 
 .linkWrapper {
-  padding: 50px;
+  padding: 38px;
 }
 
 .linkWrapper:first-child {
-  padding: 0 50px 50px;
+  padding: 0 38px 38px;
 }
 
 .buttons {
@@ -43,10 +43,10 @@
   color: #f9f7f7;
   font-size: 30px;
   transition: color 0.2s ease;
+}
 
-  &:focus {
-    color: #00ff80;
-  }
+a:focus {
+  color: #00ff80;
 }
 
 .mobileNavigation {
@@ -58,15 +58,30 @@
   width: 100vw;
 }
 
-.mobileNavigation .icon {
-  stroke: white;
+.iconOpenMenu,
+.mobileLink {
+  color: whitesmoke;
 }
 
 .mobileLink {
-  color: whitesmoke;
+  font-style: italic;
   margin-left: 40px;
   padding: 10px;
   font-size: 26px;
+}
+
+.cvLinkWrapper {
+  padding: 30px;
+}
+
+.cvWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #00ff80;
+  border-radius: 20px;
+  padding: 16px;
 }
 
 .hidden {
@@ -89,21 +104,39 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     position: sticky;
-    left: auto;
     width: 100%;
     padding: 25px 50px;
     gap: 0;
-    z-index: 999;
+    padding: 0;
   }
 
   .linkWrapper,
   .linkWrapper:first-child {
-    padding: 20px;
+    padding: 22px;
+  }
+
+  .linkWrapper:first-child {
+    white-space: nowrap;
   }
 
   .link {
-    font-size: 20px;
+    font-size: 19px;
+  }
+
+  .cvLinkWrapper {
+    padding: 5px;
+    margin-right: 5px;
+  }
+
+  .cvWrapper {
+    padding: 13px;
+  }
+
+  .cvIcon {
+    width: 34px;
+    height: 34px;
   }
 }
 
