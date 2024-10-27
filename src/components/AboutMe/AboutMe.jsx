@@ -1,7 +1,40 @@
+// import ContactsList from "../ContactsList/ContactsList.jsx";
 import css from "./AboutMe.module.css";
 
 const AboutMe = () => {
-  return <div className={css.sectionWrapper}></div>;
+  return (
+    <div className={css.sectionWrapper}>
+      <div className={css.animation}>
+        <div>Hi world</div>
+      </div>
+      <div className={css.aboutWrapper}>
+        <h1 className={css.mainTitle}>
+          <span className={css.hello}>Hello,</span>
+          <span className={css.fullName}>I&apos;m Mariia Otset</span>
+        </h1>
+        <h2 className={css.jobTitle}>Full Stack Developer</h2>
+        <h2 className={css.aboutTitle}>About me</h2>
+        <p className={css.aboutText}>
+          Over a year ago, I started learning full-stack web development. My
+          favorite part of programming is the problem-solving aspect. I love the
+          feeling of finally finding a solution to a problem.
+        </p>
+        <p className={css.aboutText}>
+          I am always looking for new challenges and opportunities to contribute
+          to the success of projects as a full-stack developer.
+        </p>
+        <p className={css.aboutText}>
+          When I am not coding, I enjoy reading or watching videos about
+          history, watching movies, and riding my bike. I also enjoy learning
+          new things.
+        </p>
+        {/* <div>
+          <ContactsList /> 
+          <ul></ul>
+        </div> */}
+      </div>
+    </div>
+  );
 };
 
 export default AboutMe;

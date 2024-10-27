@@ -1,4 +1,77 @@
 .sectionWrapper {
   display: flex;
+  flex-direction: column;
   width: 100vw;
+  background-color: #feffee;
+}
+
+.animation {
+  width: 100px;
+}
+
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-size: 33px;
+  line-height: 1.1;
+  text-align: start;
+  margin: 7px auto;
+}
+
+.hello,
+.aboutTitle {
+  font-size: 30px;
+}
+
+.hello,
+.fullName {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.fullName {
+  background: linear-gradient(45deg, #ff3c00, #ffc107, #23ff00);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.jobTitle {
+  margin-bottom: 13px;
+  background: linear-gradient(45deg, #ff4081, #3f51b5, #ff3bd8);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 25px;
+}
+
+.aboutTitle {
+  margin-bottom: 8px;
+}
+
+.aboutText {
+  font-size: 22px;
+  margin: 5px 12px;
+  padding: 5px 0;
+  border-top: 1px solid greenyellow;
+
+  &:last-child {
+    border-bottom: 1px solid greenyellow;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .mainTitle {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionWrapper {
+    flex-direction: row;
+  }
 }
