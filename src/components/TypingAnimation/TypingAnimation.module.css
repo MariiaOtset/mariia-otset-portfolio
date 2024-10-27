@@ -1,0 +1,19 @@
+.animationWrapper {
+  display: inline-block;
+  font-size: 120px;
+  height: 150px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .animationWrapper {
+    font-size: 158px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .animationWrapper {
+    font-size: 190px;
+  }
+}

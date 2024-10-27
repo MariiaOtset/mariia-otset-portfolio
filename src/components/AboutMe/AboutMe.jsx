@@ -1,18 +1,31 @@
-// import ContactsList from "../ContactsList/ContactsList.jsx";
+import ContactsList from "../ContactsList/ContactsList.jsx";
+import TypingAnimation from "../TypingAnimation/TypingAnimation.jsx";
 import css from "./AboutMe.module.css";
+import { useState, useEffect } from "react";
 
 const AboutMe = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className={css.sectionWrapper}>
-      <div className={css.animation}>
-        <div>Hi world</div>
+      <div className={css.leftSideWrapper}>
+        {windowWidth >= 768 && <TypingAnimation />}
+        {windowWidth >= 768 && <ContactsList />}
       </div>
+
       <div className={css.aboutWrapper}>
         <h1 className={css.mainTitle}>
           <span className={css.hello}>Hello,</span>
           <span className={css.fullName}>I&apos;m Mariia Otset</span>
         </h1>
         <h2 className={css.jobTitle}>Full Stack Developer</h2>
+        {windowWidth < 768 && <TypingAnimation />}
         <h2 className={css.aboutTitle}>About me</h2>
         <p className={css.aboutText}>
           Over a year ago, I started learning full-stack web development. My
