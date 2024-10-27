@@ -1,7 +1,7 @@
-// import css from './AboutMe.module.css';
+import css from "./AboutMe.module.css";
 
 const AboutMe = () => {
-  return <div>AboutMe</div>;
+  return <div className={css.sectionWrapper}></div>;
 };
 
 export default AboutMe;
