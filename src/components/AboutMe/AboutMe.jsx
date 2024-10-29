@@ -41,10 +41,7 @@ const AboutMe = () => {
           history, watching movies, and riding my bike. I also enjoy learning
           new things.
         </p>
-        {/* <div>
-          <ContactsList /> 
-          <ul></ul>
-        </div> */}
+        {windowWidth < 768 && <ContactsList />}
       </div>
     </div>
   );
