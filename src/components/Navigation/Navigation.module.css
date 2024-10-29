@@ -51,12 +51,14 @@ a:focus {
 }
 
 .mobileNavigation {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
   height: 100px;
   width: 100vw;
+  z-index: 2;
 }
 
 .iconOpenMenu,

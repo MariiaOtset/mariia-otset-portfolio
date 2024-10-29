@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100vw;
   background-color: #feffee;
+  margin-top: 100px;
 }
 
 .aboutWrapper {
@@ -75,7 +76,6 @@
 @media screen and (min-width: 768px) {
   .sectionWrapper {
     flex-direction: row;
-    margin-top: 100px;
   }
 
   .leftSideWrapper {
