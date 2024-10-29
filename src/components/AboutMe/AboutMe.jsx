@@ -16,7 +16,12 @@ const AboutMe = () => {
     <div className={css.sectionWrapper}>
       <div className={css.leftSideWrapper}>
         {windowWidth >= 768 && <TypingAnimation />}
-        {windowWidth >= 768 && <ContactsList />}
+        {windowWidth >= 768 && (
+          <div>
+            <p className={css.textContacts}>Let&apos;s get in touch:</p>
+            <ContactsList />
+          </div>
+        )}
       </div>
 
       <div className={css.aboutWrapper}>
@@ -41,7 +46,12 @@ const AboutMe = () => {
           history, watching movies, and riding my bike. I also enjoy learning
           new things.
         </p>
-        {windowWidth < 768 && <ContactsList />}
+        {windowWidth < 768 && (
+          <div>
+            <p className={css.textContacts}>Let&apos;s get in touch:</p>
+            <ContactsList />
+          </div>
+        )}
       </div>
     </div>
   );
