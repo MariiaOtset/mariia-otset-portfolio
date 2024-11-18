@@ -49,7 +49,7 @@
 }
 
 .aboutText {
-  font-size: 20px;
+  font-size: 18px;
   margin: 5px 0;
   padding: 5px 14px;
   border-top: 1px solid greenyellow;
@@ -57,6 +57,20 @@
   &:last-child {
     border-bottom: 1px solid greenyellow;
   }
+}
+
+.textContacts {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  box-shadow: 0px 6px 15px rgba(255, 182, 193, 0.6);
 }
 
 @media screen and (min-width: 400px) {

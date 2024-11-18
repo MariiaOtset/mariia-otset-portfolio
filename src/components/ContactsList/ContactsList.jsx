@@ -15,17 +15,21 @@ const ContactsList = () => {
         </a>
       </li>
       <li className={css.linkWrapper}>
-        <a href="www.linkedin.com/in/mariia-otset" target="_blank">
+        <a
+          href="www.linkedin.com/in/mariia-otset"
+          target="_blank"
+          className={css.link}
+        >
           <FaLinkedin className={css.socialsIcon} />
         </a>
       </li>
       <li className={css.linkWrapper}>
-        {/* <a href="" target="_blank">
+        {/* <a href="" target="_blank" className={css.link}>
             <VscGithub className={css.socialsIcon} />
           </a> */}
       </li>
       <li className={css.linkWrapper}>
-        {/* <a href="" target="_blank">
+        {/* <a href="" target="_blank" className={css.link}>
             <VscGithub className={css.socialsIcon} />
           </a> */}
       </li>

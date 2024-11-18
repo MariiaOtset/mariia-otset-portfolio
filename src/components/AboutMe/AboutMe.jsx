@@ -34,8 +34,8 @@ const AboutMe = () => {
         <h2 className={css.aboutTitle}>About me</h2>
         <p className={css.aboutText}>
           Over a year ago, I started learning full-stack web development. My
-          favorite part of programming is the problem-solving aspect. I love the
-          feeling of finally finding a solution to a problem.
+          favorite part of programming is the problem-solving aspect. <br /> I
+          love the feeling of finally finding a solution to a problem.
         </p>
         <p className={css.aboutText}>
           I am always looking for new challenges and opportunities to contribute

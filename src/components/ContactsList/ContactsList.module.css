@@ -1,19 +1,23 @@
-/* .iconsWrapper {
-
-} */
+.iconsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .socialsIcon {
   width: 36px;
   height: 36px;
   color: black;
 
-  /* &:hover {
-    
-  } */
+  &:hover {
+    transform: scale(1.1);
+    outline: none;
+  }
 
-  /* &:focus {
-
-  } */
+  &:nth-child(2) {
+    color: #1e90ff;
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.4);
+  }
 }
 
 .link {
