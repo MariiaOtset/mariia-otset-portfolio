@@ -17,9 +17,9 @@
   padding: 38px;
 }
 
-.linkWrapper:first-child {
+/* .linkWrapper:first-child {
   padding: 0 38px 38px;
-}
+} */
 
 .buttons {
   position: absolute;

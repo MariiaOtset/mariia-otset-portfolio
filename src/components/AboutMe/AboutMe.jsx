@@ -31,7 +31,9 @@ const AboutMe = () => {
         </h1>
         <h2 className={css.jobTitle}>Full Stack Developer</h2>
         {windowWidth < 768 && <TypingAnimation />}
-        <h2 className={css.aboutTitle}>About me</h2>
+        <h2 className={css.aboutTitle} id="about">
+          About me
+        </h2>
         <p className={css.aboutText}>
           Over a year ago, I started learning full-stack web development. My
           favorite part of programming is the problem-solving aspect. <br /> I
