@@ -10,6 +10,7 @@
 .aboutWrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .mainTitle {
@@ -119,5 +120,9 @@
 
   .aboutText {
     padding: 7px 16px 7px 10px;
+  }
+
+  .leftSideWrapper {
+    margin-left: 12px;
   }
 }

@@ -14,12 +14,8 @@
 }
 
 .linkWrapper {
-  padding: 38px;
+  padding: 25px;
 }
-
-/* .linkWrapper:first-child {
-  padding: 0 38px 38px;
-} */
 
 .buttons {
   position: absolute;
@@ -99,7 +95,7 @@ a:focus {
   }
 
   .container {
-    height: 100px;
+    height: 90px;
     display: flex;
   }
 

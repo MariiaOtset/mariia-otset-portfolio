@@ -7,6 +7,7 @@
   color: #fff;
   padding: 40px 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .title {
@@ -21,7 +22,7 @@
   gap: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 25px;
+  padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -64,6 +65,16 @@
   .skillsSection {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    width: 100%;
   }
+
+  .allSkillsWrapper {
+    padding: 40px 15px;
+  }
+  /* 
+  .skill {
+    width: 1150px;
+  } */
 }
