@@ -143,4 +143,8 @@ a:focus {
   .wrapper {
     padding: 15px;
   }
+
+  a:hover {
+    color: #00ff80;
+  }
 }
