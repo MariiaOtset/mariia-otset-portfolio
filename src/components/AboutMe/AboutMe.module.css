@@ -1,7 +1,6 @@
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   background-color: #feffee;
   margin-top: 100px;
   margin-bottom: 30px;
