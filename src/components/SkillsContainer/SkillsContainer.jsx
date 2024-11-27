@@ -35,6 +35,15 @@ const SkillsContainer = () => {
           <li>Ability to work efficiently both individually and in a team</li>
         </ul>
       </div>
+
+      <div className={css.skillsSection}>
+        <h2 className={` ${css.title} ${css.titleLanguages}`}>Languages:</h2>
+        <ul className={`${css.skill} ${css.languageSkill}`}>
+          <li>English - Upper Intermediate</li>
+          <li>Ukrainian - Native</li>
+          <li>Russian - Native</li>
+        </ul>
+      </div>
     </section>
   );
 };

@@ -1,0 +1,28 @@
+.projectItem {
+  min-width: 320px;
+  max-width: 375px;
+  border-radius: 22px;
+}
+
+.projectImage {
+  min-width: 319px;
+  max-width: 374px;
+}
+
+/* @media screen and (min-width: 768px) {
+    .projectItem {
+    }
+
+    .projectImage {
+
+}
+} */
+
+/* @media screen and (min-width: 1440px) {
+    .projectItem {
+    }
+
+    .projectImage {
+
+}
+} */
