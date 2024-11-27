@@ -1,28 +1,40 @@
 .projectItem {
-  min-width: 320px;
-  max-width: 375px;
   border-radius: 22px;
+  background-color: rgb(240, 240, 240);
+  padding: 15px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(205, 204, 204);
+  }
 }
 
 .projectImage {
-  min-width: 319px;
-  max-width: 374px;
+  border-radius: 15px;
 }
 
-/* @media screen and (min-width: 768px) {
-    .projectItem {
-    }
+@media screen and (min-width: 768px) {
+  .projectItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 650px;
+    padding: 25px 35px;
+  }
 
-    .projectImage {
-
+  .projectImage {
+    max-width: 450px;
+  }
 }
-} */
 
-/* @media screen and (min-width: 1440px) {
-    .projectItem {
-    }
+@media screen and (min-width: 1440px) {
+  .projectItem {
+    max-width: 600px;
+    padding: 25px 35px;
+  }
 
-    .projectImage {
-
+  /* .projectImage {
+  } */
 }
-} */

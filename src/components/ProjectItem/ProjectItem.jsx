@@ -11,13 +11,13 @@ const ProjectItem = () => {
           className={css.projectImage}
         />
         <div className={css.projectInfoContainer}>
-          <h3 className={css.projectTitle}></h3>
-          <p className={css.projectDescription}></p>
+          <h3 className={css.projectTitle}>yftyfd</h3>
+          <p className={css.projectDescription}>zszsx</p>
           <ul className={css.projectTechList}>
-            <li className={css.projectTechItems}></li>
-            <li className={css.projectTechItems}></li>
-            <li className={css.projectTechItems}></li>
-            <li className={css.projectTechItems}></li>
+            <li className={css.projectTechItems}>kko</li>
+            <li className={css.projectTechItems}>jbkj</li>
+            <li className={css.projectTechItems}>jbjk</li>
+            <li className={css.projectTechItems}>ljlk</li>
           </ul>
 
           <div>
