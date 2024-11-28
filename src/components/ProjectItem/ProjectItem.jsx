@@ -4,7 +4,6 @@ import { IoLogoGithub } from "react-icons/io5";
 
 const ProjectItem = ({ image, title, description, technologies, liveLink, githubLink }) => {
   return (
-    <div>
       <li className={css.projectItem}>
         <img
           src={image}
@@ -22,17 +21,16 @@ const ProjectItem = ({ image, title, description, technologies, liveLink, github
           </ul>
 
           <div  className={css.linksWrapper}>
-            <a href={liveLink} className={css.pageLink}>
+            <a href={liveLink} className={css.pageLink} target="_blank">
             <LuLink className={css.icon}/>  
             Live Page
             </a>
-            <a href={githubLink} className={css.pageLink}>
+            <a href={githubLink} className={css.pageLink} target="_blank">
             <IoLogoGithub className={css.icon}/>
             Github</a>
           </div>
         </div>
       </li>
-    </div>
   );
 };
 

@@ -13,4 +13,11 @@
 .projectsList {
   display: flex;
   flex-direction: column;
+  gap: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .projectsList {
+    gap: 45px;
+  }
 }
