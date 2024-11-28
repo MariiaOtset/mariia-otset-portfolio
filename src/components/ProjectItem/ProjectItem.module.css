@@ -2,7 +2,7 @@
   border-radius: 22px;
   background-color: rgb(240, 240, 240);
   padding: 15px;
-  margin: 0 10px;
+  margin: 0 15px;
   transition: background-color 0.3s ease;
 
   &:hover {
@@ -14,24 +14,51 @@
   border-radius: 15px;
 }
 
+.projectTechList {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+    gap: 5px;
+}
+
+.pageLink, .linksWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageLink {
+    gap: 4px;
+    text-decoration: underline;
+}
+
+.linksWrapper {
+    gap: 12px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .projectItem {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 650px;
+    max-width: 700px;
     padding: 25px 35px;
   }
 
   .projectImage {
-    max-width: 450px;
+    max-width: 400px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .projectItem {
-    max-width: 600px;
+    /* max-width: 600px; */
     padding: 25px 35px;
   }
 
