@@ -35,14 +35,14 @@ const certificates = [
 
 const Education = () => {
   return (
-    <div className={css.educationSection}>
+    <div className={css.educationSection} id="education">
       <h2>Education</h2>
       <div className={css.certificatesContainer}>
         {certificates.map((cert, index) => (
           <div
             key={index}
             className={`${css.certificate} ${
-              index === 1 ? css.collegeCertificate : ''
+              index === 1 ? css.collegeCertificate : ""
             }`}
           >
             <a
@@ -58,7 +58,7 @@ const Education = () => {
               />
               <LuExternalLink
                 className={`${css.linkIcon} ${
-                  index === 1 ? css.secondLinkIcon : ''
+                  index === 1 ? css.secondLinkIcon : ""
                 }`}
               />
             </a>

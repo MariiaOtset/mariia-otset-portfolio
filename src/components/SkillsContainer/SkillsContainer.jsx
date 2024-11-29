@@ -2,7 +2,7 @@ import css from "./SkillsContainer.module.css";
 
 const SkillsContainer = () => {
   return (
-    <section className={css.allSkillsWrapper}>
+    <section className={css.allSkillsWrapper} id="skills">
       <div className={css.skillsSection}>
         <h2 className={` ${css.title} ${css.titleHardSkills}`}>Hard skills:</h2>
         <ul className={`${css.hardSkillsWrapper} ${css.skill}`}>

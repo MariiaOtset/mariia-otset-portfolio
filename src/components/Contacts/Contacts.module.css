@@ -84,7 +84,24 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .contactsSection {
+  .contactsTitle {
+    text-align: center;
+    display: block;
+  }
+
+  .contactsInfoWrapper {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 35px;
+  }
+
+  .contactsComponent {
+    margin: 0;
+  }
+
+  .contactsList {
+    margin: 0;
   }
 }

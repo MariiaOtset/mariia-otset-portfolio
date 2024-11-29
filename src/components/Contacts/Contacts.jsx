@@ -2,13 +2,11 @@ import css from "./Contacts.module.css";
 import ContactsList from "../ContactsList/ContactsList.jsx";
 import { BsTelephoneFill } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
-// import { MdOutlineMail } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
-// import { MdOutlineEmail } from "react-icons/md";
 
 const Contacts = () => {
   return (
-    <div className={css.contactsSection}>
+    <div className={css.contactsSection} id="contacts">
       <h2 className={css.contactsTitle}>Contacts</h2>
       <div className={css.contactsInfoWrapper}>
         <ul className={css.contactsList}>
