@@ -1,3 +1,52 @@
 .contactsSection {
   padding: 30px 20px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 20px 0 10px;
+  max-width: 260px;
+}
+
+.contactsItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.contactsTitle {
+  text-align: left;
+}
+
+.contactsLink {
+  color: #1f1f1f;
+
+  &:hover {
+    color: #7b23d8;
+  }
+}
+
+.contactsIcon {
+  font-size: 25px;
+}
+
+.phoneIcon {
+  margin-left: 4px;
+}
+
+.emailIcon {
+  width: 33px;
+  height: 33px;
+}
+
+.locationIcon {
+  width: 30px;
+  height: 32px;
 }
