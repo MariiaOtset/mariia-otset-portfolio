@@ -1,41 +1,76 @@
-import css from './Education.module.css';
+import css from "./Education.module.css";
+import { LuExternalLink } from "react-icons/lu";
 
 const certificates = [
   {
     title: "Full Stack Developer",
     institution: "IT School GoIT",
-    description: "Comprehensive course covering HTML, CSS, JavaScript, React, TypeScript and Node.js.",
+    description:
+      "Comprehensive course covering HTML, CSS, JavaScript, React, TypeScript and Node.js.",
     year: "2023-2024",
-    imageUrl: "https://drive.google.com/file/d/14vAzjS1w7AYJUgIA9prIY5MhxtZUnhp5/view?usp=sharing",
-    certLink: "https://drive.google.com/file/d/14vAzjS1w7AYJUgIA9prIY5MhxtZUnhp5/view?usp=sharing"
+    imageUrl: "/src/images/GoIT-certificate.jpg",
+    certLink:
+      "https://drive.google.com/file/d/14vAzjS1w7AYJUgIA9prIY5MhxtZUnhp5/view?usp=sharing",
   },
-  // {
-  //   title: "React.js Advanced Concepts",
-  //   institution: "Udemy",
-  //   description: "In-depth study of React, including hooks, context, and performance optimization.",
-  //   year: "2023-2024",
-  //   imageUrl: "",
-  //   certLink: ""
-  // },
-  // {
-  //   title: "",
-  //   institution: "FreeCodeCamp",
-  //   description: "Complete curriculum covering front-end, back-end, and database technologies.",
-  //   year: "2024",
-  //   imageUrl: "",
-  //   certLink: ""
-  // }
+  {
+    title: "Information Technology",
+    institution: "Chelmsford College",
+    description:
+      "BTEC Level 3 National Extended Certificate in Information Technology with grade Distinction.",
+    year: "2023-2024",
+    imageUrl: "/src/images/college-cert-2.jpg",
+    certLink:
+      "https://docs.google.com/document/d/1KNbsudE_IREpJY98sSM5ZnblAGYXYDa4jii5b6D6TxM/edit?usp=sharing",
+  },
+  {
+    title: "English Certificate",
+    institution: "EF SET",
+    description:
+      "English EF SET Certificate (Reading, Listening, Writing, Speaking)",
+    year: "2024",
+    imageUrl: "/src/images/english-certificate.jpg",
+    certLink: "https://cert.efset.org/en/JWGdCn",
+  },
 ];
 
 const Education = () => {
-  return <div className={css.educationSection}>
-    <h2>Education</h2>
-    <ul>
-      {certificates.map((cert, index) => (
-      
-      ))}
-    </ul>
-  </div>;
+  return (
+    <div className={css.educationSection}>
+      <h2>Education</h2>
+      <div className={css.certificatesContainer}>
+        {certificates.map((cert, index) => (
+          <div
+            key={index}
+            className={`${css.certificate} ${
+              index === 1 ? css.collegeCertificate : ''
+            }`}
+          >
+            <a
+              href={cert.certLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={css.certLink}
+            >
+              <img
+                src={cert.imageUrl}
+                alt={`${cert.title} Certificate`}
+                className={css.certImage}
+              />
+              <LuExternalLink
+                className={`${css.linkIcon} ${
+                  index === 1 ? css.secondLinkIcon : ''
+                }`}
+              />
+            </a>
+            <h3>{cert.title}</h3>
+            <p className={css.institution}>{cert.institution}</p>
+            <p className={css.description}>{cert.description}</p>
+            <p className={css.year}>{cert.year}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Education;
