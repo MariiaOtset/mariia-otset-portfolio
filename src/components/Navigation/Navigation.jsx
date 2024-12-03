@@ -79,7 +79,7 @@ const Navigation = () => {
           </li>
           <li className={css.cvLinkWrapper}>
             <a
-              href="https://drive.google.com/file/d/1F9yYJmC0rAof0Y3eUA9_nUKEtrqgGjHo/view?usp=sharing"
+              href="https://drive.google.com/file/d/12oW03hNwMqLQ9u7edehqeTBUloRUxBd0/view?usp=sharing"
               className={`${css.link} ${css.cvWrapper}`}
               target="_blank"
             >
