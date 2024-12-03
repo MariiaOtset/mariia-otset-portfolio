@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import css from "./Navigation.module.css";
 import { RiCloseFill } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
