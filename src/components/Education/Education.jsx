@@ -1,5 +1,8 @@
 import css from "./Education.module.css";
 import { LuExternalLink } from "react-icons/lu";
+import goITCertificate from "../../assets/images/GoIT-certificate.jpg";
+import collegeCert from "../../assets/images/college-cert-2.jpg";
+import englishCert from "../../assets/images/english-certificate.jpg";
 
 const certificates = [
   {
@@ -8,7 +11,7 @@ const certificates = [
     description:
       "Comprehensive course covering HTML, CSS, JavaScript, React, TypeScript and Node.js.",
     year: "2023-2024",
-    imageUrl: "/src/images/GoIT-certificate.jpg",
+    imageUrl: goITCertificate,
     certLink:
       "https://drive.google.com/file/d/14vAzjS1w7AYJUgIA9prIY5MhxtZUnhp5/view?usp=sharing",
   },
@@ -18,7 +21,7 @@ const certificates = [
     description:
       "BTEC Level 3 National Extended Certificate in Information Technology with grade Distinction.",
     year: "2023-2024",
-    imageUrl: "/src/images/college-cert-2.jpg",
+    imageUrl: collegeCert,
     certLink:
       "https://docs.google.com/document/d/1KNbsudE_IREpJY98sSM5ZnblAGYXYDa4jii5b6D6TxM/edit?usp=sharing",
   },
@@ -28,7 +31,7 @@ const certificates = [
     description:
       "English EF SET Certificate (Reading, Listening, Writing, Speaking)",
     year: "2024",
-    imageUrl: "/src/images/english-certificate.jpg",
+    imageUrl: englishCert,
     certLink: "https://cert.efset.org/en/JWGdCn",
   },
 ];

@@ -1,9 +1,18 @@
 import css from "./MyProjects.module.css";
 import ProjectItem from "../ProjectItem/ProjectItem.jsx";
+import gameLandingImg from "../../assets/images/game-landing.jpg";
+import waterTrackerImg from "../../assets/images/water-traker.jpg";
+import travelTracksImg from "../../assets/images/travel-tracks.jpg";
+import jferssonImg from "../../assets/images/jfersson.jpg";
+import filmotekaImg from "../../assets/images/filmoteka.jpg";
+import webStudioImg from "../../assets/images/web-studio.jpg";
+import imageSearchImg from "../../assets/images/image-search.jpg";
+import focusFrameImg from "../../assets/images/focus-frame.jpg";
+import contactsBookImg from "../../assets/images/contacts-book.jpg";
 
 const projectsData = [
   {
-    image: "/src/images/game-landing.jpg",
+    image: gameLandingImg,
     title: "Game Landing Page",
     description:
       "An interactive landing page for a mobile match-3 game. Implemented an adaptive design for mobile and desktop users. Role: developer of the Gallery, How to Play, Game Video sections and Privacy Policy page. Commercial team project.",
@@ -12,7 +21,7 @@ const projectsData = [
     githubLink: "https://github.com/vitayusko/Puppy-Diary-Epic-Match-3",
   },
   {
-    image: "/src/images/water-traker.jpg",
+    image: waterTrackerImg,
     title: "Aqua Track",
     description:
       "This application tracks water consumption. Implemented an adaptive design for mobile, tablet and desktop devices. Role: developer of User Settings. Team project.",
@@ -33,7 +42,7 @@ const projectsData = [
     githubLink: "https://github.com/Kamila-Lohvynenko/final-project-frontend",
   },
   {
-    image: "/src/images/travel-tracks.jpg",
+    image: travelTracksImg,
     title: "Travel Trucks",
     description:
       "Travel Trucks is an application that helps users explore and organize travel information and logistics with an easy-to-use interface. Individual project.",
@@ -51,7 +60,7 @@ const projectsData = [
     githubLink: "https://github.com/MariiaOtset/wander-wheels",
   },
   {
-    image: "/src/images/jfersson.jpg",
+    image: jferssonImg,
     title: "Developer Portfolio",
     description:
       "The portfolio website showcases the developer's work, skills, and projects, featuring adaptive design and animations. Role: Scrum Master and developer of the section of running lines with photos. Team project.",
@@ -60,7 +69,7 @@ const projectsData = [
     githubLink: "https://github.com/inmate1/project-js-teamwork05",
   },
   {
-    image: "/src/images/filmoteka.jpg",
+    image: filmotekaImg,
     title: "Movie Search",
     description:
       "A movie search application that allows users to find films by title and view details, including description, cast, and reviews. Integrated with an external API for fetching movie data. Individual project.",
@@ -77,7 +86,7 @@ const projectsData = [
     githubLink: "https://github.com/MariiaOtset/goit-react-hw-05",
   },
   {
-    image: "/src/images/web-studio.jpg",
+    image: webStudioImg,
     title: "Web Studio",
     description:
       "WebStudio website highlights company services with an adaptive design for mobile, tablet and desktop devices. Individual project.",
@@ -86,7 +95,7 @@ const projectsData = [
     githubLink: "https://github.com/MariiaOtset/goit-markup-hw-06",
   },
   {
-    image: "/src/images/image-search.jpg",
+    image: imageSearchImg,
     title: "Image Search",
     description:
       "Image search website to search images by keywords. Individual project.",
@@ -103,7 +112,7 @@ const projectsData = [
     githubLink: "https://github.com/MariiaOtset/goit-typescript-hw-02",
   },
   {
-    image: "/src/images/focus-frame.jpg",
+    image: focusFrameImg,
     title: "Focus Frame",
     description:
       "FocusFrame website presents the photography profession with intuitive navigation and an adaptive design for mobile, tablet and desktop devices. Role: Scrum Master and Hero section developer. Team project",
@@ -112,7 +121,7 @@ const projectsData = [
     githubLink: "https://github.com/inmate1/project-teamwork09",
   },
   {
-    image: "/src/images/contacts-book.jpg",
+    image: contactsBookImg,
     title: "Contact Book",
     description:
       "Contact Book website is an authentication-based application for managing personal contacts. The app requires user authentication for access to the contacts management features. Individual project.",
