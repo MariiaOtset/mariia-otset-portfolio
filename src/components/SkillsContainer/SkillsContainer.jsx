@@ -11,8 +11,11 @@ const SkillsContainer = () => {
           <li className={css.primarySkill}>React</li>
           <li className={css.primarySkill}>TypeScript</li>
           <li className={css.primarySkill}>Node.js</li>
+          <li className={css.primarySkill}>Next.js</li>
 
           <li>Redux</li>
+          <li>Tailwind CSS</li>
+          <li>Sass</li>
           <li>CSS Modules</li>
           <li>Git</li>
           <li>MongoDB</li>
