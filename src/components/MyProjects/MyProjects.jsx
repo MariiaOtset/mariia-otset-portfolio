@@ -9,6 +9,7 @@ import webStudioImg from "../../assets/images/web-studio.jpg";
 import imageSearchImg from "../../assets/images/image-search.jpg";
 import focusFrameImg from "../../assets/images/focus-frame.jpg";
 import contactsBookImg from "../../assets/images/contacts-book.jpg";
+import kpopShopImg from "../../assets/images/kpop-shop.png";
 
 const projectsData = [
   {
@@ -19,6 +20,22 @@ const projectsData = [
     technologies: ["HTML", "CSS", "JS"],
     liveLink: "https://vitayusko.github.io/Puppy-Diary-Epic-Match-3/",
     githubLink: "https://github.com/vitayusko/Puppy-Diary-Epic-Match-3",
+  },
+  {
+    image: kpopShopImg,
+    title: "Daebak Shop",
+    description:
+      "Adaptive for different devices K-pop merch store. Product pages were integrated, filtering by categories and names, Stripe for payment, Clerk for authentication and Supabase for database. ",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "Supabase",
+      "Cleck",
+      "Stripe",
+      "React",
+      "Tailwind CSS",
+    ],
+    liveLink: "https://frabjous-empanada-f7581f.netlify.app/",
   },
   {
     image: waterTrackerImg,
